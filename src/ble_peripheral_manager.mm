@@ -147,7 +147,7 @@
     for (auto it = emitters.begin(); it != emitters.end(); ++it) {
         if ([it->first isEqual:uuid]) {
             auto cb = [peripheral, central, characteristic](NSData *data) {
-                NSLog(@"subscription note: %@ %@", data, NSStringFromClass(characteristic.class));
+                //NSLog(@"subscription note: %@ %@", data, NSStringFromClass(characteristic.class));
 
                 [peripheral updateValue:data
                       forCharacteristic:characteristic
